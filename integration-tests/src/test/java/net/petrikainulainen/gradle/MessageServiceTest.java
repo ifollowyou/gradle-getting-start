@@ -14,6 +14,7 @@ public class MessageServiceTest {
 
     @Before
     public void setUp() {
+        System.out.println("准备测试。。");
         messageService = new MessageService();
     }
 

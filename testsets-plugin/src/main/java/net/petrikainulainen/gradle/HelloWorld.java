@@ -1,13 +1,15 @@
 package net.petrikainulainen.gradle;
 
-import org.apache.log4j.Logger;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * @author Petri Kainulainen
  */
 public class HelloWorld {
 
-    private static final Logger LOGGER = Logger.getLogger(HelloWorld.class);
+    private static final Logger LOGGER = LoggerFactory.getLogger(HelloWorld.class);
 
     public static void main(String[] args) {
         MessageService messageService = new MessageService();

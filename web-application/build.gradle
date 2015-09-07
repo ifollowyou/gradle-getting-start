@@ -1,11 +1,11 @@
 buildscript {
     repositories {
         maven {
-            url 'http://localhost:8081/nexus/content/groups/public/'
+            url 'http://127.0.0.1:8081/nexus/content/groups/public/'
         }
     }
     dependencies {
-        classpath 'org.akhikhl.gretty:gretty:1.2.+'
+        classpath 'org.akhikhl.gretty:gretty:1.2.4'
     }
 }
 
@@ -23,9 +23,11 @@ archivesBaseName = 'ifollowyou'
 sourceCompatibility = '1.8'
 targetCompatibility = '1.8'
 
+[compileJava,compileTestJava,javadoc]*.options*.encoding = "UTF-8"
+
 repositories {
     maven {
-        url 'http://localhost:8081/nexus/content/groups/public/'
+        url 'http://127.0.0.1:8081/nexus/content/groups/public/'
     }
 
     mavenLocal()
